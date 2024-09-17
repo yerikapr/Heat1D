@@ -50,7 +50,7 @@ class Diffusivity2 {
             return 0;
         }
         //let value = this.selected.value * 0.000001;
-        let value = this.selected.value * 0.1;
+        let value = this.selected.value * 1;
         let result = Number(value.toFixed(10));
         return result;
     }
