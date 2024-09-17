@@ -159,11 +159,11 @@ class Menu1 {
         this.playButton.style('width', '90px');
         this.playButton.mouseClicked(() => {
             if (this.diffusivityPanelA.getValue() == 0) {
-                alert("Diffusivitas Benda A Harus Diisi!");
+                alert("Jenis Bahan A Harus Diisi!");
                 return;
             } 
             if (this.diffusivityPanelB.getValue() == 0) {
-                alert("Diffusivitas Benda B Harus Diisi!");
+                alert("Jenis Bahan B Harus Diisi!");
                 return;
             } 
             this.timePanel.start();
@@ -341,5 +341,16 @@ class TemperaturePanel {
 
         fill(0,0,0);
         text('Pita Suhu T (ºC)', this.leftX - 25, this.topY - 20);
+        
+        text('Heat Equation adalah persamaan diferensial parsial yang memodelkan perubahan suhu', this.leftX+680 , this.topY+350);
+        text('di seluruh dimensi suatu benda, sehubungan dengan waktu. Garis pada kurva merepresentasikan', this.leftX+680 , this.topY+370);
+        text('grafik fungsi posisi, menunjukkan distribusi suhu sepanjang batang pada waktu tertentu. ', this.leftX+680 , this.topY+390)
+         
+        text('Ada dua kondisi batas yang digunakan, yakni:', this.leftX+680 , this.topY+420)
+        text('o Dirichlet: suhu pada ujung batang dijaga selalu konstan', this.leftX+680 , this.topY+440)
+        text('o Neumann: ujung batang terisolasi sehingga tidak ada kalor yang masuk dan keluar', this.leftX+680 , this.topY+460)
+        
+        text('Note: ', this.leftX+680 , this.topY+490)
+        text('Simulasi hanya bisa dijalankan ketika kondisi batas dan jenis bahan telah dipilih', this.leftX+680 , this.topY+510)
     }
 }

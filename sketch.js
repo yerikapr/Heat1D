@@ -12,6 +12,6 @@ function setup() {
 }
 
 function draw() {
-  background(250,236,203);
+  background(240, 248, 254);
   currentMenu.display();
 }

@@ -21,7 +21,7 @@ class Diffusivity {
     }
 
     display() {
-        text(`Diffusivitas Benda ${this.label}: ${this.getValue()}`, this.labelPos[0], this.labelPos[1]);
+        text(`Jenis Bahan ${this.label}: ${this.getValue()}`, this.labelPos[0], this.labelPos[1]);
         text('0', this.leftInfoPos[0], this.leftInfoPos[1]);
         text('1', this.rightInfoPos[0], this.rightInfoPos[1]);
     }

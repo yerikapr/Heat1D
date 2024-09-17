@@ -26,7 +26,7 @@ class Diffusivity2 {
 
     display() {
         // text(`Diffusivitas Benda ${this.label}: ${this.getValue()}`, this.labelPos[0], this.labelPos[1]);
-        text(`Diffusivitas Benda ${this.label}`, this.labelPos[0], this.labelPos[1]);
+        text(`Jenis Bahan ${this.label}`, this.labelPos[0], this.labelPos[1]);
     }
 
     onChange() {
@@ -73,7 +73,7 @@ class Diffusivity2 {
 }
 
 const DiffusivityMatter = [
-    {label: '--- Pilih Diffusivitas ---', value: 0},
+    {label: '--- Pilih Jenis Bahan ---', value: 0},
     {label: 'Tembaga', value: 111},
     {label: 'Beton', value: 0.65},
     {label: 'Silikon', value: 0.9},
